@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+    background-image: url(./images/landing2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    backface-visibility: hidden;   
+}
+
+@media only screen and (max-width: 65.62em) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media only screen and (max-width: 36.25em) {
+    body {
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+
+/* Navigation*/
+.navbar{
+    padding: .5rem .3rem;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: all .5s ease 0s;
+    backface-visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+
+
+.logo{
+    color: blanchedalmond;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1rem 0 0 2rem;
+}
+
+.svg-inline--fa.fa-w-14{
+    color: #4b767e;
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    outline: none;
+}
+
+.navbar-nav{
+    margin: 0 1.2rem;
+
+}
+
+.navbar-nav li{
+    margin: 0 .8rem;
+}
+
+.navbar-nav .nav-link{
+    color:blanchedalmond;
+    padding-top: .8rem;
+    margin-right: .5rem;
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+@media only screen and (max-width: 23.4375em) {
+    .navbar-nav .nav-link{
+        font-size: 1.5rem;
+    }
+}
+
+.navbar-nav .nav-link:hover{
+    color: #345258;
+    font-size: 1.8rem;
+}
+
+/* Landing Page*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 32%;
+    z-index: 1;
+    color: #4b767e;
+}
+.caption h1{
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-shadow: .3rem .3rem .5rem #101419;
+    padding-bottom: .1rem;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 36.25em) {
+    .caption h1{
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-width: 25em) {
+    .caption h1{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 23.4375em) {
+    .caption h1{
+        margin-bottom: 2rem;
+    }
+}
+.caption h2{
+    font-size: 5rem;
+    text-shadow: .2rem .2rem .8rem #101419;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color:blanchedalmond;
+}
+@media only screen and (max-width: 36.25em) {
+    .caption h2{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 25em) {
+    .caption h2{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 23.4375em) {
+    .caption h2{
+        margin-bottom: 5rem;
+    }
+}
+.caption .btn-lg{
+    border: 2px solid #4b767e;
+    border-radius: .6rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: blanchedalmond;
+    background-color: #345258;
+    padding: .8rem 1.4rem;
+    
+    transition: all 1s ease;
+}
+@media only screen and (max-width: 22.31em) {
+    .caption .btn-lg{
+
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: .4rem 1rem;
+        
+    }
+}
+.caption .btn-lg:hover{
+    background: transparent;
+    color:blanchedalmond;
+    border-color: #345258;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.caption .btn-text:active {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+#footer-home{
+
+    color: blanchedalmond;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+}
+@media only screen and (max-width: 19em) {
+    #footer-home{
+  
+        display: flex;
+        font-size: 1rem;
+
+    }
+}
+
+
+#footer-home .rights{
+    margin: 1rem auto 0;
+
+}
+.bagfooter:link,
+.bagfooter:visited{
+    text-decoration: none;
+    transition: all 1s;
+    outline: none;
+    color: #345258;
+    font-weight: 700;
+    backface-visibility: hidden;
+}
+
+#footer-home .bagfooter:hover{
+    color: #345258;
+}
+
+
+
+
+
